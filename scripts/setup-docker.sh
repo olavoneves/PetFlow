@@ -40,6 +40,12 @@ docker run -d \
   sleep infinity
 
 echo ">>> [6/6] Copiando JAR para o container..."
+: '
+IMPORTANTE
+
+- Adicionei caminho relativo no copy,
+- Comando deve ser executado dentro da pasta raiz do projeto, onde existe a pasta target/
+'
 docker cp target/petflow-0.0.1-SNAPSHOT.jar app-rm563558:/app.jar
 
 echo ">>> Iniciando aplicacao dentro do container..."

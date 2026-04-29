@@ -218,5 +218,5 @@ docker exec -it mysql-rm563558 mysql -u petflow_user -ppetflow123 petflow -e "SE
 
 ## 📎 Links
 
-- 🔗 GitHub: [link do repositório]
+- 🔗 GitHub: https://github.com/olavoneves/PetFlow
 - 🎥 Vídeo: [link do YouTube]

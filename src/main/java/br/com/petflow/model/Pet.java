@@ -7,6 +7,7 @@ import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
@@ -38,7 +39,7 @@ public class Pet {
 
     @DecimalMin(value = "0.1", message = "Peso deve ser maior que zero")
     @Column(precision = 5, scale = 2)
-    private Double peso;
+    private BigDecimal peso;
 
     @NotBlank(message = "Nome do tutor é obrigatório")
     @Column(name = "tutor_nome", nullable = false, length = 150)
